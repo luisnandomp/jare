@@ -8,5 +8,7 @@
     </head>
     <body>
         <h1>Cadastre seu Jaré conosco :D</h1>
+
+        <a href="{{route('jacare.create')}}">Cadastre aqui</a>
     </body>
 </html>
