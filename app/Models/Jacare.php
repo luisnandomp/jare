@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Jacare extends Model
 {
     use HasFactory;
+
+    protected $table = 'jacare';
+
     protected $fillable = [
         'nome',
         'peso',
