@@ -9,5 +9,5 @@ Route::get('/jacares/lista', [JacaresController::class, 'index'])->name('jacare.
 
 Route::get('/jacares/novo', [JacaresController::class, 'create'])->name('jacare.create');
 Route::post('/jacares', [JacaresController::class, 'store'])->name('jacare.store');
-Route::get('/jacares/show', [JacaresController::class, 'show'])->name('jacare.show');
+Route::get('/jacares/{jacare}', [JacaresController::class, 'show'])->name('jacare.show');
 

@@ -35,9 +35,8 @@ class JacaresController extends Controller
 
     }
 
-    public function show(Request $jacare_id)
+    public function show(Jacare $jacare)
     {
-        $jacare = Jacare::find($jacare_id);
-        return view('jacare.show');
+        return view('jacare.show', compact('jacare'));
     }
 }
