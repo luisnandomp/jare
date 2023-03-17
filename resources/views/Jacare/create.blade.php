@@ -10,28 +10,30 @@
         <h1 align="center">Cadastre aqui o seu Jacaré lindo e cheiroso >:D</h1>
         <br>
         <br>
-        <div align="center">
-        <form action="{{route('jacare.store')}}" method="POST">
+        <form action="{{route('jacare.store')}}" method="POST" align="center">
             @csrf
             <label for="">nome</label>
-            <input type="text" id="nome"> <br>
-
-            <label for="">sexo</label>
-            <input type="radio" id="sexo" value="femea"/>Femea
-            <input type="radio" id="sexo" value="macho"/>Macho <br>
+            <input type="text" id="nome" name="nome"> <br>
 
             <label for="">peso</label>
-            <input type="text" id="peso"> <br>
+            <input type="number" id="peso" name="peso"> <br>
 
             <label for="">tamanho</label>
-            <input type="text" id="tamanho"> <br>
+            <input type="" id="tamanho" name="tamanho"> <br>
+
+            <label for="">sexo</label>
+            <select name="sexo" id="">
+            <option value="macho" name="sexo">Macho</option>
+            <option value="femea" name="sexo">Femea</option>
+            </select><br>
 
             <label for="">Vacinado?</label>
-            <input type="radio" id="vacinado" value="Sim"/>Sim
-            <input type="radio" id="vacinado" value="nao" checked>Não <br>
+            <select name="vacinado" id="">
+                <option value="sim" name="vacinado">Sim</option>
+                <option value="nao" name="vacinado">Não</option>
+                </select><br><br>
 
-            <input type="submit">
-        </div>
+            <input type="submit" value="enviar">
         </form>
     </body>
 </html>

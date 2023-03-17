@@ -20,11 +20,11 @@ class JacaresController extends Controller
         return view('jacare.create');
     }
 
-    public function store(request $dados)
+    public function store(Request $dados)
     {
         $dados->validate([
-            'nome' => 'required|string',
-            'peso' => 'required|size:14',
+            'nome' => 'required',
+            'peso' => 'required',
             'tamanho' => 'required',
             'sexo' => 'required',
             'vacinado' => 'required'
@@ -33,5 +33,11 @@ class JacaresController extends Controller
         $jacares = Jacare::create($dados->all());
         return redirect()->route('jacare.index');
 
+    }
+
+    public function show(Request $jacare_id)
+    {
+        $jacare = Jacare::find($jacare_id);
+        return view('jacare.show');
     }
 }

@@ -9,7 +9,7 @@ class Jacare extends Model
 {
     use HasFactory;
 
-    protected $table = 'jacare';
+    protected $table = 'jacares';
 
     protected $fillable = [
         'nome',

@@ -20,7 +20,7 @@
                             <td>{{ $jacare->nome }}</td>
                             <td>{{ $jacare->tamanho }}</td>
                             <td>
-                                <a href="{{route('jacare.show', $jacare->id)}}">Ver</a>
+                                <a href="{{route('jacare.show', $jacares->id)}}">Ver</a>
                             </td>
                         </tr>
                     @endforeach
