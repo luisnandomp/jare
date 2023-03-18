@@ -9,10 +9,11 @@
         @vite(['resources/scss/app.scss'])
     </head>
     <body>
-        <h1>Cadastre seu Jaré conosco :X</h1>
+        <div class="form">
+            <h1>Cadastre seu Jaré conosco :X</h1> <br> <br>
 
-        <a href="{{route('jacare.create')}}">Cadastre aqui</a>
-
-        <a href="{{route('jacare.index')}}">Veja os jacarés já cadastrados</a>
+            <button type="button" class="btn btn-outline-primary"><a href="{{route('jacare.create')}}" class="create">Cadastre aqui</a></button>
+            <button type="button" class="btn btn-outline-info"><a href="{{route('jacare.index')}}" class="create">Veja os jacarés já cadastrados</a></button>
+        </div>
     </body>
 </html>

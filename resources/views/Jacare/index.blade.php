@@ -5,11 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Lista dos Jacares</title>
+        @vite(['resources/scss/app.scss'])
     </head>
     <body>
-        <h1>Lista de Jacares</h1>
-            <div>
-                <table border="1" width="90%">
+
+        <div class="form">
+            <h1 align="center">Lista de Jacares</h1><br> <br>
+
+            <div class="container">
+                <table class="table table-striped">
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Tamanho</th>
@@ -20,14 +24,16 @@
                             <td>{{ $jacare->nome }}</td>
                             <td>{{ $jacare->tamanho }}</td>
                             <td>
-                                <a href="{{route('jacare.show', $jacare->id)}}">Ver</a>
+                                <a class="btn btn-primary" href="{{route('jacare.show', $jacare->id)}}" role="button">Ver</a>
                             </td>
                         </tr>
                     @endforeach
                 </table>
             </div>
                 <div>
-                <a href="{{route('jacare.home')}}">Voltar para o incio</a>
+                    <button type="button" class="btn btn-outline-warning"><a href="{{route('jacare.home')}}">Voltar para o incio</a></button>
                 </div>
+
+        </div>
     </body>
 </html>

@@ -5,35 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>cadastro</title>
+        @vite(['resources/scss/app.scss'])
     </head>
     <body>
-        <h1 align="center">Cadastre aqui o seu Jacaré lindo e cheiroso >:D</h1>
-        <br>
-        <br>
-        <form action="{{route('jacare.store')}}" method="POST" align="center">
+        <form class="row g-3" action="{{route('jacare.store')}}" method="POST">
+            <h1 align="center">Cadastre aqui o Seu lindo e cheiroso Jacarézinho</h1>
             @csrf
-            <label for="">nome</label>
-            <input type="text" id="nome" name="nome"> <br>
+            <div class="col-md-6">
+              <label for="" class="form-label">Nome</label>
+              <input type="name" name="nome" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label">Peso</label>
+              <input type="number" name="peso" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="" class="form-label">Tamanho</label>
+              <input type="number" name="tamanho" class="form-control" id="inputAddress">
+            </div>
 
-            <label for="">peso</label>
-            <input type="number" id="peso" name="peso"> <br>
 
-            <label for="">tamanho</label>
-            <input type="" id="tamanho" name="tamanho"> <br>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Sexo</label>
+                <select id="inputState" name="sexo" class="form-select">
+                  <option selected name="sexo">Macho</option>
+                  <option name="sexo">Femêa</option>
+                </select>
+              </div>
 
-            <label for="">sexo</label>
-            <select name="sexo" id="">
-            <option value="macho" name="sexo">Macho</option>
-            <option value="femea" name="sexo">Femea</option>
-            </select><br>
-
-            <label for="">Vacinado?</label>
-            <select name="vacinado" id="">
-                <option value="sim" name="vacinado">Sim</option>
-                <option value="nao" name="vacinado">Não</option>
-                </select><br><br>
-
-            <input type="submit" value="enviar">
-        </form>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Vacinado?</label>
+                <select id="inputState" name="vacinado" class="form-select">
+                  <option selected name="vacinado">Sim</option>
+                  <option name="vacinado">Não</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
     </body>
 </html>
