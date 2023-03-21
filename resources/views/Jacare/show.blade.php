@@ -9,18 +9,17 @@
     </head>
     <body>
         <div class="form">
-            <h1>Vizualização do Jacaré</h1><br> <br>
-                <hr>
-                <div>
-                    <h1><strong>nome: </strong> {{$jacare->nome}}</h1>
-                    <p><strong>peso: </strong> {{$jacare->peso}}</p>
-                    <p><strong>sexo: </strong> {{$jacare->sexo}}</p>
-                    <p><strong>tamanho: </strong>{{$jacare->tamanho}}</p>
-                    <p><strong>vacinado?: </strong>{{$jacare->vacinado}}</p>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-outline-warning"><a href="{{route('jacare.index')}}">voltar para lista de Jacarés</a></button>
-                </div>
+            <h1>Vizualização dos Jacarés</h1><br> <br>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Nome: </strong> {{$jacare->nome}} </li>
+                <li class="list-group-item"> <strong>Peso: </strong>{{$jacare->peso}}<strong> kg</strong> </li>
+                <li class="list-group-item"><strong>Sexo: </strong>{{$jacare->sexo}}</li>
+                <li class="list-group-item"><strong>Tamanho: </strong>{{$jacare->tamanho}}<strong> m</strong></li>
+                <li class="list-group-item"><strong>Vacinado: </strong>{{$jacare->vacinado}}</li>
+            </ul>
+
+          <button type="button" class="btn btn-outline-warning"><a href="{{route('jacare.index')}}">voltar para lista de Jacarés</a></button>
         </div>
     </body>
 </html>

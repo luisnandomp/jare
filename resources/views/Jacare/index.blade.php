@@ -22,7 +22,7 @@
                         <tr>
                             <td align="center">{{ $jacare->id }}</td>
                             <td>{{ $jacare->nome }}</td>
-                            <td>{{ $jacare->tamanho }}</td>
+                            <td>{{ $jacare->tamanho }}<strong> m</strong></td>
                             <td>
                                 <a class="btn btn-primary" href="{{route('jacare.show', $jacare->id)}}" role="button">Ver</a>
                             </td>
