@@ -29,7 +29,7 @@
                         </tr>
                     @endforeach
                 </table>
-            </div>
+            </div> <br>
                 <div>
                     <button type="button" class="btn btn-outline-warning"><a href="{{route('jacare.home')}}">Voltar para o incio</a></button>
                 </div>

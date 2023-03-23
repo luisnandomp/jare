@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome', 200);
             $table->decimal('peso', 5,2);
-            $table->decimal('tamanho', 4,2);
+            $table->decimal('tamanho', 5,2);
             $table->string('sexo', 200);
             $table->string('vacinado', 200);
 

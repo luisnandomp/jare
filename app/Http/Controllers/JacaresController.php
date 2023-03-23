@@ -22,6 +22,8 @@ class JacaresController extends Controller
 
     public function store(Request $dados)
     {
+        $jacares = new Jacare($dados->all());
+
         $dados->validate([
             'nome' => 'required',
             'peso' => 'required',

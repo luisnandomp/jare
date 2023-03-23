@@ -17,11 +17,11 @@
             </div>
             <div class="col-md-6">
               <label for="" class="form-label">Peso</label>
-              <input type="number" name="peso" class="form-control" id="inputPassword4">
+              <input type="decimal" name="peso" class="form-control" id="inputPassword4">
             </div>
             <div class="col-12">
               <label for="" class="form-label">Tamanho</label>
-              <input type="number" name="tamanho" class="form-control" id="inputAddress">
+              <input type="decimal" name="tamanho" class="form-control" id="inputAddress">
             </div>
 
 

@@ -14,6 +14,7 @@
 
             <button type="button" class="btn btn-outline-primary"><a href="{{route('jacare.create')}}" class="create">Cadastre aqui</a></button>
             <button type="button" class="btn btn-outline-info"><a href="{{route('jacare.index')}}" class="create">Veja os jacarés já cadastrados</a></button>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
         </div>
     </body>
 </html>
